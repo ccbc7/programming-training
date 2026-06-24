@@ -1,0 +1,14 @@
+# 依存パッケージ
+node_modules/
+
+# ログ
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS
+.DS_Store
+
+# エディタ
+.idea/
+*.swp

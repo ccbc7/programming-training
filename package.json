@@ -1,0 +1,21 @@
+{
+  "name": "programming-training",
+  "version": "1.0.0",
+  "description": "初学者向け JavaScript/TypeScript 教材（コンソールアプリ中心）",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "01": "tsx src/01-fizzbuzz.ts",
+    "02": "tsx src/02-quiz.ts",
+    "03": "tsx src/03-price.ts",
+    "04": "tsx src/04-array.ts",
+    "05": "tsx src/05-name-search.ts",
+    "06": "tsx src/06-oldest.ts",
+    "07": "tsx src/07-golf.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

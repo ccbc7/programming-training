@@ -1,0 +1,24 @@
+{
+  // VS Code でデバッグ実行するための設定です。
+  //
+  // 使い方:
+  //   1. src/ の中のファイルを開く（例: 01-fizzbuzz.ts）
+  //   2. 行番号の左をクリックして「赤い丸（ブレークポイント）」を置く
+  //   3. F5 キーを押す
+  //   4. 赤い丸の行で実行が止まり、その時点の変数の中身を見られる
+  //
+  // この教材で一番大事なのは「コードを読む」より
+  // 「変数がどう変わるかを目で見る」ことです。
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "今ひらいているファイルを実行 (tsx)",
+      "type": "node",
+      "request": "launch",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["tsx", "${file}"],
+      "console": "integratedTerminal",
+      "skipFiles": ["<node_internals>/**"]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  // 最初は「JavaScript として」書けるよう、型チェックはゆるめにしています。
+  // 慣れてきたら "strict": true にして、型の練習に進みましょう。
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": false,
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "types": ["node"],
+    "noEmit": true
+  },
+  "include": ["src"]
+}
