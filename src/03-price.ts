@@ -7,6 +7,12 @@
 //   イートイン価格（消費税 10%）
 // を計算して表示します。
 //
+// 期待する出力（showPrice(1000) のとき）:
+//   価格: 1000円
+//   原価: 700円
+//   テイクアウト: 1080円
+//   イートイン: 1100円
+//
 // 実行方法:
 //   npx tsx src/03-price.ts
 //
@@ -16,32 +22,21 @@
 //   - 新しい変数を作る … 計算の「途中結果」を変数にためる
 // ===============================================
 
-// price という値を「引数」として受け取る関数。
+// price を引数として受け取る関数。
 function showPrice(price) {
-  // 引数 price をそのまま使うだけでなく、
-  // いったん「途中結果」を新しい変数に入れるのがポイント。
-  const cost = price * 0.7; // 原価 = 70%
-  const takeoutPrice = price * 1.08; // テイクアウト = 8%税
-  const eatInPrice = price * 1.1; // イートイン = 10%税
-
-  console.log(`価格: ${price}円`);
-  console.log(`原価: ${cost}円`);
-  console.log(`テイクアウト: ${takeoutPrice}円`);
-  console.log(`イートイン: ${eatInPrice}円`);
+  // TODO: 計算結果を「途中の変数」にためてから表示しよう。
+  //   引数 price をそのまま表示するだけでなく、
+  //   一度 cost / takeoutPrice / eatInPrice という変数に入れるのがポイント。
+  //
+  // ヒント:
+  //   const cost = price * 0.7;      // 原価 = 70%
+  //   const takeoutPrice = price * 1.08;  // 8%税
+  //   const eatInPrice = price * 1.1;     // 10%税
+  //   console.log(`価格: ${price}円`);
+  //   ...
 }
 
 // 作った関数を「呼び出す」。1000 が引数 price に入る。
 showPrice(1000);
 
-// -----------------------------------------------
-// 🔎 デバッガで見てみよう
-//   cost / takeoutPrice / eatInPrice の行を1つずつ進めて、
-//   変数が1つずつ増えていく様子を見よう。
-//
-// 🚀 発展
-//   - showPrice(500) や showPrice(880) も呼んで結果を見る
-//   - 1円未満が出る価格（例: 333円）だと小数が出る。
-//     Math.round(...) で四捨五入してみよう
-//   - 原価率を「引数」で渡せるようにする
-//     例: function showPrice(price, costRate) { ... }
-// -----------------------------------------------
+// 困ったら answer/03-price.ts に答えがあります。
