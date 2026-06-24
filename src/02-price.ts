@@ -1,5 +1,5 @@
 /*
-  課題03: テイクアウト・イートイン価格計算
+  課題02: テイクアウト・イートイン価格計算
 
   商品の「価格」を渡すと、
     原価（価格の70%）
@@ -14,7 +14,7 @@
     イートイン: 1100円
 
   実行方法:
-    npx tsx src/03-price.ts
+    npx tsx src/02-price.ts
 
   学ぶこと:
     - 引数 … function に値を渡す（price）
@@ -39,4 +39,4 @@ function showPrice(price) {
 // 作った関数を「呼び出す」。1000 が引数 price に入る。
 showPrice(1000);
 
-// 困ったら answer/03-price.ts に答えがあります。
+// 困ったら answer/02-price.ts に答えがあります。

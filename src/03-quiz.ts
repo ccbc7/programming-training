@@ -1,11 +1,11 @@
 /*
-  課題02: クイズゲーム
+  課題03: クイズゲーム
 
   画面に問題を出して、キーボードから答えの番号を入力してもらいます。
   正解したら score（点数）を 1 増やします。
 
   実行方法:
-    npx tsx src/02-quiz.ts
+    npx tsx src/03-quiz.ts
 */
 
 
@@ -19,4 +19,3 @@ console.log("  3. 福岡");
 const answer1 = await rl.question("番号を入力: "); 
 
 rl.close(); 
-
