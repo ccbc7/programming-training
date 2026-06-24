@@ -33,17 +33,7 @@ npm install
 npx tsx src/01-fizzbuzz.ts
 ```
 
-`package.json` にショートカットも用意してあります。
-
-```bash
-npm run 01   # FizzBuzz
-npm run 02   # クイズゲーム
-npm run 03   # 価格計算
-npm run 04   # 配列（合計・最大値）
-npm run 05   # 名前検索
-npm run 06   # 最年長者
-npm run 07   # ゴルフゲーム（最終課題）
-```
+ファイル名を変えれば、どの課題も同じように実行できます。
 
 ---
 
